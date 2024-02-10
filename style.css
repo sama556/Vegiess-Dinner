@@ -1,0 +1,813 @@
+:root {
+    --main-color: #ce822b;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Comfortaa", Arial, sans-serif;
+}
+
+.over-lay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.container {
+    width: 1200px;
+    margin: auto;
+}
+
+header {
+    text-align: center;
+    margin: 50px 0;
+}
+
+header h2 {
+    color: #444444;
+    font-size: 35px;
+    text-transform: uppercase;
+    margin: 0;
+    margin-bottom: 22px;
+    font-weight: 500;
+}
+
+header span {
+    width: 50px;
+    height: 4px;
+    background-color: var(--main-color);
+    display: block;
+    margin: 0px auto;
+}
+
+/* Start NAvbar  */
+nav {
+    padding: 10px;
+    color: #000000;
+    height: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 2;
+    background-color: #eeeeee;
+}
+
+nav .logo {
+    float: left;
+    color: #fff;
+}
+
+nav .logo h3 {
+    margin: 0;
+    padding: 20px;
+    text-transform: uppercase;
+    font-size: 28px;
+}
+
+nav .list {
+    float: right;
+}
+
+nav .list li {
+    display: inline-block;
+    list-style: none;
+}
+
+nav .list li a {
+    text-decoration: none;
+    padding: 20px;
+    font-size: 16px;
+    text-transform: uppercase;
+    color: #fff;
+    font-weight: bold;
+}
+
+nav .list a:hover,
+nav .list li.active a {
+    color: var(--main-color);
+}
+
+/* End NAvbar  */
+
+/* Start Header*/
+.header {
+    background-image: url(./image//01.jpg);
+    height: 600px;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+.header .info {
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.header h2 {
+    margin: 0;
+    font-size: 55px;
+    text-transform: uppercase;
+    text-shadow: 1px 1px 3px #fff;
+    letter-spacing: 2px;
+    word-spacing: 4px;
+}
+
+.header p {
+    font-size: 25px;
+    text-transform: capitalize;
+}
+
+/***********  Start Reservations  ************/
+
+.reservation form {
+    float: right;
+    width: 40%;
+    background-color: #fafafa;
+    border: 1px solid #e0e0e0;
+    border-radius: 0.3rem;
+    padding: 20px;
+    font-size: 16px;
+    height: 100%;
+}
+
+.reservation form label {
+    font-size: 16px;
+    margin: 10px 0;
+    font-weight: 600;
+    color: #444444;
+    line-height: 2;
+}
+
+.reservation form input {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.reservation form button {
+    padding: 8px 12px;
+    margin: 15px auto 20px;
+    background-color: var(--main-color);
+    color: #fff;
+    border: none;
+    border-radius: 2px;
+    font-size: 16px;
+    text-transform: capitalize;
+    line-height: 2;
+}
+
+.reservation-content {
+    width: 80%;
+    float: left;
+}
+
+.reservation-content .details {
+    width: 50%;
+    padding-left: 26px;
+}
+
+.reservation-content .details h2 {
+    font-size: 26px;
+    margin: 0px 0px 18px;
+    color: #252525;
+    font-weight: 500;
+}
+
+.reservation-content .details p {
+    margin: 10px 0;
+    color: #333;
+    line-height: 1.3;
+}
+
+.side {
+    width: 20%;
+    float: right;
+    text-align: center;
+    height: 100%;
+}
+
+.side h3 {
+    margin-top: 0px;
+    font-weight: bold;
+    font-size: 22px;
+    color: #333;
+}
+
+.side img {
+    padding: 5px;
+    background-color: #f1f1f1;
+    border: 1px solid #ccc;
+}
+
+.side p {
+    font-size: 20px;
+}
+
+.side sub {
+    margin: 15px 10px;
+    color: #666;
+}
+
+/* End reservation */
+
+/** Start Menu  */
+.menu .colum1 {
+    width: 50%;
+    float: left;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+.menu .colum2 {
+    width: 50%;
+    float: right;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+.menu h3 {
+    text-align: center;
+    font-weight: 500;
+    font-size: 26px;
+    color: #252525;
+    text-transform: uppercase;
+}
+
+.menu .item {
+    width: 100%;
+    padding-bottom: 5px;
+    margin-bottom: 30px;
+    padding: 10px;
+}
+
+.menu .item-img {
+    float: left;
+    width: 200px;
+    margin: 0 30px 0 0;
+}
+
+.menu .item-img img {
+    width: 100%;
+    display: block;
+}
+
+.menu .item-details {
+    padding: 5px 10px;
+    overflow: hidden;
+}
+
+.menu .item-details h4 {
+    font-size: 22px;
+    margin: 0 0 10px;
+    text-align: left;
+    color: #252525;
+    font-weight: 500;
+    line-height: 1.1;
+}
+
+.menu .item-details p {
+    text-align: left;
+    width: 100%;
+    margin-bottom: 0;
+    line-height: 1.6;
+    font-size: 15px;
+}
+
+.menu .item-details span {
+    text-align: center;
+    display: block;
+    margin: 15px;
+    font-size: 26px;
+}
+
+/* End Menu */
+
+/****  Start Back2 ****/
+.back2 {
+    background-image: url(./image/back2.webp);
+    background-size: cover;
+    background-attachment: fixed;
+    height: 400px;
+    position: relative;
+    text-align: center;
+    color: #fff;
+}
+
+.back2 h3 {
+    margin: 70px 0 0;
+    font-size: 22px;
+    text-transform: uppercase;
+    font-weight: 500;
+    line-height: 2;
+}
+
+.back2 h2 {
+    font-size: 32px;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+.back2 p {
+    line-height: 2;
+    text-transform: uppercase;
+}
+
+.back2 button {
+    text-transform: capitalize;
+    line-height: 2;
+    padding: 5px 10px;
+    background-color: var(--main-color);
+    border: none;
+    border-radius: 2px;
+    margin-top: 20px;
+    font-size: 16px;
+}
+
+.back2 button a {
+    text-decoration: none;
+    color: #fff;
+}
+
+/****  End Back2 ****/
+
+/****  Start our vision ****/
+.our-vision {
+    text-align: center;
+}
+
+.our-vision img {
+    max-height: 150px;
+    max-width: 80%;
+    display: inline-block;
+    margin: 10px;
+}
+
+.our-vision P {
+    line-height: 1.5;
+    color: #444444;
+    width: 90%;
+    margin: 10px auto;
+    font-size: 17px;
+}
+
+/****  End our vision ****/
+
+/* Start contact */
+.contactUs {
+    background-color: white;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    line-height: 1.5
+}
+
+.contactUs form input {
+    border-radius: 5px;
+    border-width: 1px;
+    border-color: #f2f2f3;
+    margin: 0px 10px 70px 10px;
+    padding: 10px;
+    width: 250px;
+    box-shadow: 1px 1px 2px 1px #f2f2f2;
+}
+
+.contactUs form input:focus {
+    outline: none;
+}
+
+.contactUs .info .fa-phone-alt,
+.contactUs .info .fa-envelope {
+    color: var(--main-color);
+}
+
+.contactUs #submit {
+    background-color: var(--main-color);
+    color: white;
+    font-size: 14px;
+    border: none;
+}
+
+.contactUs .info .right {
+    margin-left: 10px;
+    font-size: 16px;
+    line-height: 165%;
+    width: 30%;
+    height: 215px;
+    float: left;
+}
+
+.contactUs a:link {
+    text-decoration: none;
+    color: var(--main-color);
+}
+
+.contactUs a:hover {
+    text-decoration: underline;
+    color: var(--main-color);
+}
+
+.contactUs .icons {
+    width: 30%;
+}
+
+.contactUs .info .right .icons ul {
+    display: flex;
+    padding: 5px;
+    padding: 50px 0px 0px 0px;
+}
+
+.contactUs .info .right .icons ul li {
+    list-style: none;
+    font-size: 30px;
+    padding: 15px;
+}
+
+.contactUs .info .right .icons ul li .fa-facebook-f,
+.contactUs .info .right .icons ul li .fa-youtube,
+.contactUs .info .right .icons ul li .fa-instagram {
+    color: var(--main-color);
+}
+
+.contactUs .info .left {
+    float: right;
+    width: 65%;
+}
+
+.contactUs .info .left iframe {
+    height: 300px;
+    width: 100%;
+    margin: 0px 50px 50px 0px;
+}
+
+.clear-fix {
+    clear: both;
+}
+
+/* End Contact */
+
+/* Start Footer */
+
+.footer {
+    width: 100%;
+    text-align: center;
+    padding: 30px 0;
+background-color: #eeeeee;
+}
+
+.footer .line {
+    border-color: #f2f2f2;
+    height: 0.1px;
+    border-bottom: none;
+    border-left: none;
+    border-right: none;
+}
+
+.footer ul {
+    padding: 15px 0px 0px 0px;
+    margin: 20px;
+}
+
+.footer ul li {
+    list-style: none;
+    font-size: 14px;
+    display: inline-block;
+    padding: 10px;
+}
+
+.footer p {
+    text-align: center;
+    font-size: 13px;
+    padding: 15px;
+}
+
+.footer a {
+    text-decoration: none;
+    color: #333333;
+}
+
+.footer a:hover {
+    color: var(--main-color);
+}
+
+/*********************   Start Login Page     ******************/
+
+/* Full-width input fields */
+.login-content input[type="text"],
+.login-content input[type="password"] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+/* Set a style for all buttons */
+.login-button {
+    background-color: var(--main-color);
+    color: white;
+    padding: 12px 18px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    border-radius: 5px;
+}
+
+.login-button:hover {
+    opacity: 0.8;
+}
+
+/* Extra styles for the cancel button */
+.login .cancelbtn {
+    width: auto;
+    padding: 10px 18px;
+    background-color: #f44336;
+    color: #fff;
+    border: none;
+}
+
+/* Center the image and position the close button */
+.login .imgcontainer {
+    text-align: center;
+    margin: 24px 0 12px 0;
+    position: relative;
+}
+
+.login img.avatar {
+    width: 30%;
+    border-radius: 50%;
+}
+
+.login .containr {
+    padding: 16px;
+}
+
+.login span.psw {
+    float: right;
+    padding-top: 16px;
+}
+
+.login {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.4);
+    padding-top: 60px;
+}
+
+.login-content {
+    background-color: #fefefe;
+    margin: 5% auto 15% auto;
+    border: 1px solid #888;
+    width: 50%;
+}
+
+/* The Close Button (x) */
+.login .close {
+    position: absolute;
+    right: 25px;
+    top: 0;
+    color: #000;
+    font-size: 35px;
+    font-weight: bold;
+}
+
+.login .close:hover,
+.login .close:focus {
+    color: red;
+    cursor: pointer;
+}
+
+/*********************   Start sign up Page     ******************/
+
+/* Full-width input fields */
+.sign-up input[type="text"],
+.sign-up input[type="password"] {
+    width: 100%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    display: inline-block;
+    border: none;
+    background: #f1f1f1;
+}
+
+/* Add a background color when the inputs get focus */
+.sign-up input[type="text"]:focus,
+.sign-up input[type="password"]:focus {
+    background-color: #ddd;
+    outline: none;
+}
+
+.sign-button,
+.signupbtn {
+    background-color: var(--main-color);
+    padding: 12px 18px;
+    cursor: pointer;
+    width: 100%;
+    opacity: 0.9;
+    color: white;
+    border-radius: 5px;
+    border: none;
+}
+
+.sign-button:hover {
+    opacity: 1;
+}
+
+.sign-up .cancelbtn {
+    padding: 14px 20px;
+    background-color: #f44336;
+}
+
+.sign-up .cancelbtn,
+.sign-up .signupbtn {
+    float: left;
+    width: 50%;
+    border: none;
+    color: white;
+}
+
+.sign-up .containr {
+    padding: 16px;
+}
+
+.sign-up {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: #474e5d;
+    padding-top: 50px;
+}
+
+.sign-content {
+    background-color: #fefefe;
+    margin: 5% auto 15% auto;
+    border: 1px solid #888;
+    width: 80%;
+}
+
+.sign-up hr {
+    border: 1px solid #f1f1f1;
+    margin-bottom: 25px;
+}
+
+.sign-up .close {
+    position: absolute;
+    right: 50px;
+    top: 75px;
+    font-size: 40px;
+    font-weight: bold;
+    color: #f1f1f1;
+}
+
+.sign-up .close:hover,
+.sign-up .close:focus {
+    color: #f44336;
+    cursor: pointer;
+}
+
+.sign-up .clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+
+/*****************    Start Settings Box      ****************/
+.setting-box {
+    position: fixed;
+    top: 0;
+    left: -200px;
+    width: 200px;
+    height: 100%;
+    background-color: #ccc;
+    z-index: 1000;
+    transition: .4s ease-in-out;
+}
+
+.setting-box.open {
+    left: 0;
+}
+
+.setting-box .icon {
+    position: absolute;
+    top: 100px;
+    right: -40px;
+    text-align: center;
+    background-color: #ccc;
+    color: #000000;
+    font-size: 20px;
+    cursor: pointer;
+
+}
+
+.setting-box .icon i {
+    width: 40px;
+    padding: 8px;
+}
+
+.setting-box .option-box {
+    padding: 10px;
+    margin: 10px;
+    text-align: center;
+    background-color: #eeeeee;
+}
+
+.setting-box .option-box h4 {
+    margin: 0px;
+    color: #666666;
+    font-weight: bolder;
+    text-transform: capitalize;
+    margin-bottom: 15px;
+    font-size: 14px;
+}
+
+.setting-box .option-box .colors-list {
+    list-style: none;
+    margin: 10px 0 0;
+    padding: 0;
+    text-align: center;
+}
+
+.setting-box .option-box .colors-list li {
+    width: 100px;
+    height: 30px;
+    border-radius: 8px;
+    background-color: #111111;
+    margin: 25px auto;
+    cursor: pointer;
+    opacity: 0.5;
+}
+
+.setting-box .option-box .colors-list li.active {
+    opacity: 1;
+    box-shadow: 1px 0px 10px 0px #000000
+}
+
+.setting-box .option-box .colors-list li:first-child {
+    background-color: #ff9800;
+}
+
+.setting-box .option-box .colors-list li:nth-child(2) {
+    background-color: #19b1cc;
+}
+
+.setting-box .option-box .colors-list li:nth-child(3) {
+    background-color: #921f1f;
+}
+
+.setting-box .option-box .colors-list li:nth-child(4) {
+    background-color: #c93687;
+}
+
+.setting-box .option-box .colors-list li:nth-child(5) {
+    background-color: #0f4d0d;
+}
+
+.setting-box .random-background .yes,
+.setting-box .random-background .no {
+    font-size: 13px;
+    font-weight: bold;
+    padding: 5px 12px;
+    display: inline-block;
+    margin: 5px;
+    width: 50px;
+    background-color: #009688;
+    border-radius: 5px;
+    opacity: .5;
+    cursor: pointer;
+}
+
+.setting-box .random-background span.active {
+    opacity: 1;
+}
+
+/*****************    End Settings Box      ****************/
